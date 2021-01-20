@@ -1,0 +1,21 @@
+name: Merge Dependabot
+author: AraHaan <seandhunt_7@yahoo.com>
+description: Leaves a comment on an open PR from dependabot when build passes to merge.
+branding:
+  icon: 'message-square'  
+  color: 'purple'
+inputs:
+  # todo: possibly remove these inputs?
+  msg: 
+    description: Comment's message
+    required: true
+  check_for_duplicate_msg:
+    description: If false, action doesn't check for duplicate msg.
+    required: false
+    default: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.msg }}
+    - ${{ inputs.check_for_duplicate_msg }}
