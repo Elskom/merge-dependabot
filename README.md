@@ -1,2 +1,2 @@
 # merge-dependabot
-Merges Dependabot Pull requests when they pass.
+Action that Merges Dependabot Pull requests when they pass.
