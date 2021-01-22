@@ -2,7 +2,7 @@ name: Merge Dependabot
 author: AraHaan <seandhunt_7@yahoo.com>
 description: Leaves a comment on an open PR from dependabot when build passes to merge.
 branding:
-  icon: 'message-square'  
+  icon: 'at-sign'  
   color: 'purple'
 runs:
   using: 'docker'
